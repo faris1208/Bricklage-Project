@@ -1,0 +1,214 @@
+@import "../../styles/index.scss";
+
+.wrapper{
+  padding: 0px 0px 50px;
+
+
+    .listing_container{
+      margin-top: 30px;
+      padding: 0px 40px;
+
+        p{
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #191919;
+            margin-bottom: 5px;
+
+            span{
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #C40002;
+            }
+        }
+
+        h2{
+            font-family: Helvetica;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 114.99999999999999%;
+            letter-spacing: 0%;
+            color: #191919;
+        }
+
+        .dropdownContainer{
+            padding: 10px 10px;
+            max-width: 588px;
+            display: flex;
+            border-radius: 15px;
+            gap: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 23.4px var(--Number2) #DEE1F65C;
+            margin-top: 20px;
+
+            .dropdown {
+                position: relative;
+                width: 180px;
+                cursor: pointer;
+                font-size: 14px;
+              
+                .selected {
+                  padding: 12px 10px;
+                  border: 1px solid #ddd;
+                  border-radius: 12px;
+                  background: white;
+                  font-family: Open Sans;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 100%;
+                  letter-spacing: 0%;
+                  color: #5D5D5D;
+                  
+                }
+              
+                .options {
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  width: 100%;
+                  background: white;
+                  border: 1px solid #ddd;
+                  border-radius: 10px;
+                  list-style: none;
+                  padding: 10px 15px;
+                  margin: 5px 0;
+                  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                  max-height: 150px;
+                  overflow-y: auto;
+                  scrollbar-width: none;
+                  z-index: 999;
+              
+                  li {
+                    padding: 12px 10px;
+                    transition: background 0.2s;
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #191919;
+                    // border: 2px solid red;
+                    &:hover {
+                        background: #FFE8E8;
+                      color: #C40002;
+                    }
+                  }
+                }
+              }
+
+           
+        }
+    }
+
+    @include responsive("mobile"){
+
+      .listing_container{
+        margin-top: 30px;
+        padding: 0px 20px;
+  
+          p{
+              font-family: Montserrat;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              color: #191919;
+              margin-bottom: 5px;
+  
+              span{
+                  font-family: Montserrat;
+                  font-weight: 700;
+                  font-size: 12px;
+                  line-height: 100%;
+                  letter-spacing: 0%;
+                  color: #C40002;
+              }
+          }
+  
+          h2{
+              font-family: Helvetica;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 114.99999999999999%;
+              letter-spacing: 0%;
+              color: #191919;
+          }
+  
+          .dropdownContainer{
+              padding: 10px 10px;
+              width: 100%;
+              max-width: 588px;
+              display: flex;
+              border-radius: 15px;
+              gap: 10px;
+              background-color: #fff;
+              box-shadow: 0px 2px 23.4px var(--Number2) #DEE1F65C;
+              margin-top: 20px;
+  
+              .dropdown {
+                  position: relative;
+                  width: 180px;
+                  cursor: pointer;
+                  font-size: 10px;
+                
+                  .selected {
+                    padding: 12px 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 12px;
+                    background: white;
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #5D5D5D;
+                    
+                  }
+                
+                  .options {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    background: white;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    list-style: none;
+                    padding: 10px 15px;
+                    margin: 5px 0;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                    max-height: 150px;
+                    overflow-y: auto;
+                    scrollbar-width: none;
+                
+                    li {
+                      padding: 12px 10px;
+                      transition: background 0.2s;
+                      font-family: Open Sans;
+                      font-weight: 400;
+                      font-size: 10px;
+                      line-height: 100%;
+                      letter-spacing: 0%;
+                      color: #191919;
+                      // border: 2px solid red;
+                      &:hover {
+                          background: #FFE8E8;
+                        color: #C40002;
+                      }
+                    }
+                  }
+                }
+  
+             
+          }
+      }
+    }
+}
+
+
+  

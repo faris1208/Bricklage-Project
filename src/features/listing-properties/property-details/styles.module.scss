@@ -1,0 +1,595 @@
+@import "../../../styles/index.scss";
+
+.detailsContainer {
+  padding: 0px 0px 0px;
+
+  .backButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    padding: 0px 40px;
+    margin: 0px 0px 40px;
+
+    p{
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #5D5D5D;
+    }
+  
+    
+  }
+  
+
+  .details_wrapper {
+    margin-top: 60px;
+    display: flex;
+    gap: 100px;
+    padding: 0px 40px;
+
+    .box_one {
+      width: 50%;
+
+      .lekki {
+        h2 {
+          font-family: OpenBold;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 130%;
+          letter-spacing: 0px;
+          color: #191919;
+        }
+
+        .location_box {
+          margin-top: 10px;
+          display: flex;
+          gap: 5px;
+
+          p {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #8e8e8e;
+          }
+        }
+      }
+
+      .descripton {
+        margin-top: 25px;
+
+        h2 {
+          font-family: OpenBold;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 130%;
+          letter-spacing: 0px;
+          color: #191919;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-family: Open Sans;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 130%;
+          letter-spacing: 0px;
+          color: #191919;
+        }
+      }
+
+      .safety_wrapper {
+        padding: 20px 10px 10px;
+        background: #ebebeb;
+        border-radius: 15px;
+        margin-top: 30px;
+
+        .safety_text {
+          h3 {
+            font-family: Open Sans;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+          }
+        }
+
+        ol {
+          margin-top: 10px;
+          margin-left: 5px;
+          padding: 10px;
+
+          li {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .features {
+        margin-top: 30px;
+
+        h2 {
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 130%;
+          letter-spacing: 0px;
+          color: #191919;
+        }
+
+        ul {
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px 0px;
+          padding: 0px 20px;
+
+          li {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .property_prices {
+      width: 50%;
+
+      .property_wrapper {
+        padding: 15px 15px;
+        border: 1.11px solid #9f9f9f99;
+        border-radius: 11px;
+
+        .property_prices_text {
+          margin-bottom: 35px;
+
+          p {
+            font-family: Open Sans;
+            font-weight: 500;
+            font-size: 17.78px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #000000;
+            margin-bottom: 10px;
+          }
+
+          h3 {
+            font-family: OpenBold;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+          }
+        }
+
+        .property_prices_payment {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          margin-top: 20px;
+
+          p {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #8e8e8e;
+
+            span {
+              font-family: Open Sans;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #000000;
+            }
+          }
+        }
+
+        .apply_btn {
+          margin-top: 30px;
+
+          button {
+            padding: 15px 60px;
+            border-top-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+            background: #c40002;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+              background: #a70104;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recommended{
+    padding: 60px 50px;
+    margin-top: 40px;
+    background: #F2F3F5;
+
+
+    h2{
+        font-family: Open Sans;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+
+    .house_card {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        .house_card_box {
+          flex: 1 1 calc(33.333% - 20px);
+          max-width: calc(33.333% - 20px);
+          min-width: 250px;
+          box-sizing: border-box;
+        }
+      }
+
+      .view_all_btn{
+        margin-top: 70px;
+
+        a{
+            text-decoration: none;
+        }
+
+        button {
+            padding: 15px 60px;
+            border-top-right-radius: 18px;
+            border-bottom-left-radius: 18px;
+            background: #c40002;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+              background: #a70104;
+            }
+          }
+      }
+  }
+
+  
+}
+
+@include responsive("mobile"){
+  .detailsContainer {
+    padding: 0px 0px 0px;
+  
+    .backButton {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      padding: 0px 20px;
+      margin: 0px 0px 20px;
+  
+      p{
+          font-family: Open Sans;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #5D5D5D;
+      }
+    
+      
+    }
+    
+  
+    .details_wrapper {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      padding: 0px 20px;
+  
+      .box_one {
+        width: 100%;
+  
+        .lekki {
+          h2 {
+            font-family: OpenBold;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+          }
+  
+          .location_box {
+            margin-top: 10px;
+            display: flex;
+            gap: 5px;
+  
+            p {
+              font-family: Open Sans;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              text-align: center;
+              color: #8e8e8e;
+            }
+          }
+        }
+  
+        .descripton {
+          margin-top: 25px;
+  
+          h2 {
+            font-family: OpenBold;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+            margin-bottom: 10px;
+          }
+  
+          p {
+            font-family: Open Sans;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+          }
+        }
+  
+        .safety_wrapper {
+          padding: 20px 10px 10px;
+          background: #ebebeb;
+          border-radius: 15px;
+          margin-top: 30px;
+  
+          .safety_text {
+            h3 {
+              font-family: Open Sans;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #191919;
+            }
+          }
+  
+          ol {
+            margin-top: 10px;
+            margin-left: 5px;
+            padding: 10px;
+  
+            li {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #191919;
+              margin-bottom: 10px;
+            }
+          }
+        }
+  
+        .features {
+          margin-top: 30px;
+  
+          h2 {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0px;
+            color: #191919;
+          }
+  
+          ul {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px 0px;
+            padding: 0px 20px;
+  
+            li {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #000000;
+            }
+          }
+        }
+      }
+  
+      .property_prices {
+        width: 100%;
+  
+        .property_wrapper {
+          padding: 15px 15px;
+          border: 1.11px solid #9f9f9f99;
+          border-radius: 11px;
+  
+          .property_prices_text {
+            margin-bottom: 15px;
+  
+            p {
+              font-family: Open Sans;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #000000;
+              margin-bottom: 10px;
+            }
+  
+            h3 {
+              font-family: OpenBold;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #191919;
+            }
+          }
+  
+          .property_prices_payment {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            margin-top: 10px;
+  
+            p {
+              font-family: Open Sans;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              color: #8e8e8e;
+  
+              span {
+                font-family: Open Sans;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 130%;
+                letter-spacing: 0px;
+                color: #000000;
+              }
+            }
+          }
+  
+          .apply_btn {
+            margin-top: 30px;
+  
+            button {
+              padding: 15px 60px;
+              border-top-right-radius: 18px;
+              border-bottom-left-radius: 18px;
+              background: #c40002;
+              font-family: Montserrat;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              text-align: center;
+              color: #ffffff;
+              border: none;
+              cursor: pointer;
+  
+              &:hover {
+                background: #a70104;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .recommended{
+      padding: 60px 20px;
+      margin-top: 40px;
+      background: #F2F3F5;
+  
+  
+      h2{
+          font-family: Open Sans;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 130%;
+          letter-spacing: 0px;
+          color: #000000;
+      }
+  
+      .house_card {
+        width: 100%;
+          margin-top: 15px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: space-between;
+          .house_card_box {
+            flex: 1 1 calc(100% - 0px);
+            max-width: calc(100% - 0px);
+            min-width: 150px;
+            box-sizing: border-box;
+          }
+        }
+  
+        .view_all_btn{
+          margin-top: 30px;
+  
+          a{
+              text-decoration: none;
+          }
+  
+          button {
+              padding: 15px 60px;
+              border-top-right-radius: 18px;
+              border-bottom-left-radius: 18px;
+              background: #c40002;
+              font-family: Montserrat;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              text-align: center;
+              color: #ffffff;
+              border: none;
+              cursor: pointer;
+  
+              &:hover {
+                background: #a70104;
+              }
+            }
+        }
+    }
+  
+    
+  }
+}

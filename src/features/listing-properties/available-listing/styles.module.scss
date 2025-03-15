@@ -1,0 +1,34 @@
+@import "../../../styles/index.scss";
+
+.wrapper{
+    padding: 0px 40px;
+    margin-top: 60px;
+
+    .house_card{
+        display: grid;
+        gap: 30px 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .house_card_box{
+            width: 100%;
+       
+        }
+    }
+
+    @include responsive("mobile"){
+
+        padding: 0px 20px;
+    margin-top: 60px;
+
+    .house_card{
+        display: grid;
+        gap: 30px 30px;
+        grid-template-columns: 1fr ;
+
+        .house_card_box{
+            width: 100%;
+       
+        }
+    }
+    }
+}

@@ -1,0 +1,54 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 184px;
+    background: #FFFFFF;
+    margin-top: 20px;
+
+  
+    .prevNext {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 5px 10px;
+
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      color: #191919;
+  
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  
+    .pageNumber {
+      border: none;
+      background-color: transparent;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 12px;
+    //   line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      
+  
+      &.active {
+        background-color: #ffb3b3; // Light red background
+        color: #b30000; // Dark red text
+      }
+    }
+  }
+  
