@@ -5,6 +5,7 @@ import icon from "../../../../../public/assets/images/icon-park-outline_search.s
 import money from "../../../../../public/assets/images/healthicons_money-bag-outline.svg";
 import { homePageListing } from "../data";
 import HouseCard from "@/app/components/house-card";
+import Link from "next/link";
 
 export default function PropertyListing() {
   return (
@@ -18,7 +19,9 @@ export default function PropertyListing() {
           </h1>
         </div>
         <div className={styles.btn_listing}>
-          <button>View all listing</button>
+          <Link href={"/listing-properties"}>
+            <button>View all listing</button>
+          </Link>
         </div>
       </div>
       <div className={styles.calculate_wrapper}>
