@@ -116,7 +116,7 @@
     .background_image {
       width: 100%;
       // max-width: 1440px;
-      background-image: url("../../../../../public/assets/images/hero-section-img.jpg");
+      background-image: url("../../../../../public/assets/images/hero-section-img.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -175,35 +175,39 @@
               margin: 15px 0px 30px;
             }
 
-            // .hero_buttons {
-            //   a {
-            //     text-decoration: none;
-            //     color: #fff;
+            .hero_buttons {
 
-            //     button {
-            //       font-family: Montserrat;
-            //       font-weight: 600;
-            //       font-size: 16px;
-            //       line-height: 100%;
-            //       letter-spacing: 0%;
-            //       text-align: center;
-            //       background: #c40002;
-            //       color: #fff;
-            //       gap: 10px;
-            //       border-top-right-radius: 18px;
-            //       border-bottom-left-radius: 18px;
-            //       border: none;
-            //       cursor: pointer;
-            //       width: 100%;
-            //       height: 45;
-            //       gap: 10px;
+              a {
+                text-decoration: none;
+                color: #fff;
 
-            //       &:hover {
-            //         background: #a10104;
-            //       }
-            //     }
-            //   }
-            // }
+               
+              }
+
+              button {
+                padding: 15px 20px;
+                font-family: Montserrat;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                background: #c40002;
+                // background-color: green;
+                color: #fff;
+                gap: 10px;
+                border-top-right-radius: 18px;
+                border-bottom-left-radius: 18px;
+                border: none;
+                cursor: pointer;
+                // width: 100%;
+                gap: 10px;
+
+                &:hover {
+                  background: #a10104;
+                }
+              }
+            }
           }
 
           .hero_image {

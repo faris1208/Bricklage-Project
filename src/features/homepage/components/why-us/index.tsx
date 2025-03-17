@@ -62,7 +62,7 @@ export default function WhyUs() {
               insights and real-world examples
             </p>
           </div>
-          <div className={styles.affordability_box}>
+          <div className={styles.affordability_box_two}>
             <h6>Affordability</h6>
             <p>
               Discover the power of installment plans in breaking down financial
@@ -70,7 +70,7 @@ export default function WhyUs() {
               insights and real-world examples
             </p>
           </div>
-          <div className={styles.affordability_box}>
+          <div className={styles.affordability_box_three}>
             <h6>Affordability</h6>
             <p>
               Discover the power of installment plans in breaking down financial

@@ -2,7 +2,7 @@
 
 .wrapper{
     width: 100%;
-    max-width: 397px;
+    // max-width: 397px;
     min-height: 300px;
     padding: 4px;
     background-color: #fff;
@@ -13,6 +13,8 @@
 
         .listing_card_img{
             width: 100%;
+            min-height: 400px;
+            // border: 2px solid red;
             border-radius: 8px;
         }
 
@@ -92,7 +94,7 @@
 @include responsive("mobile"){
     .wrapper{
         width: 100%;
-        max-width: 330px;
+        max-width: 344px;
         min-height: 300px;
         padding: 4px;
         background-color: #fff;
