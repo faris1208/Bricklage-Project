@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useRef, useState } from "react";
 import styles from "../property-listing/syles.module.scss";
 import Image from "next/image";
 import icon from "../../../../../public/assets/images/icon-park-outline_search.svg";
@@ -6,8 +7,27 @@ import money from "../../../../../public/assets/images/healthicons_money-bag-out
 import { homePageListing } from "../data";
 import HouseCard from "@/app/components/house-card";
 import Link from "next/link";
+import left from "../../../../../public/assets/images/Vector (14).svg";
+import right from "../../../../../public/assets/images/Vector (15).svg";
 
 export default function PropertyListing() {
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeButton, setActiveButton] = useState<"left" | "right" | null>(null);
+
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const { current } = scrollRef;
+      const scrollAmount = 600; 
+      current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+      setActiveButton(direction);
+    }
+  };
+
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.property_wrapper}>
@@ -54,10 +74,21 @@ export default function PropertyListing() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div className={styles.arrow_box_container}>
+            <div  className={`${styles.arrow_box} ${
+                activeButton === "left" ? styles.active : styles.inactive
+              }`}  onClick={() => scroll("left")}>
+              <Image src={left} alt="left" width={50} height={30}  className={styles.arrow_left}/>
+            </div>
+            <div className={`${styles.arrow_box} ${
+                activeButton === "right" ? styles.active : styles.inactive
+              }`}  onClick={() => scroll("right")}>
+              <Image src={right} alt="left" width={50} height={30}  className={styles.arrow_left}/>
+            </div>
+          </div>
         </div>
       </div>
-      <div className={styles.house_card}>
+      <div className={styles.house_card}  ref={scrollRef}>
         {homePageListing.map((tech, index) => (
           <div key={index} className={styles.house_card_box}>
             <HouseCard
